@@ -1,3 +1,8 @@
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body{
     font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
@@ -297,10 +302,6 @@ body{
     font-weight: 700;
 }
 
-.footer-tex{
-    width: 30%;
-}
-
 .redes-sociais{
     display: flex;
     width: 20%;
@@ -314,4 +315,242 @@ body{
 
 .redes-sociais a img {
     width: 90%;
+}
+
+@media (max-width: 768px){
+    body{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+
+    .header-brand{
+        margin: 10px auto;
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+
+    .navbar{
+        justify-content: space-around;
+        align-content: center;
+        margin: 10px 0px;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    .navbar li{
+        margin: 10px 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8em;
+        border-bottom: 2px solid #202224;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .banner-content{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: justify;
+        order: 4;
+    }
+    
+    .banner-main-title{
+        width: 100%;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .banner-second-title{
+        width: 100%;
+        font-size: 1.6em;
+        text-align: center;
+    }
+    
+    .banner-p-content{
+        width: 90%;
+        font-size: 1.3em;
+        font-weight: 400;
+        margin: 20px auto;
+    }
+    
+    .freepik-link{
+        width: 100%;
+        font-size: 1.1em;
+        font-weight: 400;
+        text-align: center;
+    }
+ 
+    .content-btn {
+        width: 50%;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
+    .image {
+        width: 90%;
+        order: 1;
+    }
+
+    /* Valores */
+
+    .valores-title{
+        text-align: center;
+        font-size: 2.5em;
+    }
+    
+    .valores-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .valores-items{
+        width: 70%;
+    }
+ 
+    .valores-items-imgs{
+        width:40%;
+    }
+    
+    .valores-items-imgs img{
+        width: 100%;
+    }
+    
+    .valores-items-content{
+        width: 90%;
+        font-size: 1.5em;
+    }
+    
+    
+    .flaticon-link{
+        font-size: 1.3em;
+        font-weight: 400;
+        width: 93%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    
+    .flaticon-link a{
+        margin: 0;
+    }
+
+    /* Sobre */
+
+    .sobre-title {
+        font-size: 2.5em;
+    }
+    
+    .sobre-content{
+        flex-direction: column;
+    }
+    
+    .sobre-img{
+        width: 90%;
+    }
+    
+    .sobre-text{
+        width: 90%;
+        font-size: 1.1em;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+    }
+    
+    /* Contato */
+
+    .contato-title{
+        font-size: 2.5em;
+    }
+    
+    .form {
+        width: 90%;
+    }
+    
+    .input-form, .text-area {
+        width: 85%;
+        text-align: center;
+        font-size: 1.4em;
+    }
+    
+    .text-area{
+        width: 83% !important;
+    }
+      
+    .submit-btn {
+        width: 50%;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    /* Footer */
+
+    .footer{
+        flex-direction: column;
+    }
+    
+    .footer-brand{
+        text-align: center;
+        width: 90%;
+        font-size: 2.3em;
+        margin: 15px 0px;
+    }
+    
+    .footer-text{
+        font-size: 1.5em;
+    }
+    
+    .redes-sociais{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 15px auto;
+    }
+    
+    .redes-sociais a{
+        margin: 15px 10px;
+        width: 15%;
+    }
+    
+}
+
+@media (max-width: 420px){
+    body{
+        font-size: 1em;
+        text-align:center;
+    }
+
+    .header-brand{
+        font-size: 2.3em;
+    }
+
+    .banner-main-title{
+        font-size: 1.5em;
+
+    }
+    
+    .banner-second-title{
+        font-size: 1.4em;
+    }
+
+    .sobre-text{
+        width: 85%;
+    }
+
+    .footer-text{
+        font-size: 1.3em;
+    }
 }
